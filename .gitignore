@@ -1,0 +1,6 @@
+# Ajustes personales de cada persona
+.claude/settings.local.json
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
