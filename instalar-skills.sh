@@ -15,8 +15,8 @@ LISTA="
 pbakaus/impeccable|.claude/skills/impeccable|impeccable
 nextlevelbuilder/ui-ux-pro-max-skill|.claude/skills/ui-ux-pro-max|ui-ux-pro-max
 GoogleChrome/modern-web-guidance|skills/modern-web-guidance|modern-web-guidance
-emilkowalski/skill|skills/emil-design-eng|emil-design-eng
-emilkowalski/skill|skills/review-animations|review-animations
+emilkowalski/skills|skills/emil-design-eng|emil-design-eng
+emilkowalski/skills|skills/review-animations|review-animations
 meodai/skill.color-expert|.|color-expert
 blader/humanizer|.|humanizer
 vercel-labs/agent-skills|skills/web-design-guidelines|web-design-guidelines
