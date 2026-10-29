@@ -12,14 +12,23 @@ Qué hace cada una, una por una: [SKILLS.md](SKILLS.md).
 
 ## La forma más fácil: que lo haga Claude
 
+Abre Claude Code donde sea y pégale esto:
+
+> Clona https://github.com/AleixAj/claudeconfig, lee su CLAUDE.md y
+> sigue las instrucciones para instalarlo.
+
+Te preguntará dónde lo quieres (global o en un proyecto) y lo hace solo. En
+[CLAUDE.md](CLAUDE.md) están las instrucciones que leerá.
+
+Si prefieres clonarlo tú:
+
 ```bash
 git clone https://github.com/AleixAj/claudeconfig
 cd claudeconfig
 claude
 ```
 
-Y le dices: **"instala esto"**. En [CLAUDE.md](CLAUDE.md) están las
-instrucciones para él: te preguntará dónde lo quieres y lo hará solo.
+Y le dices: **"instala esto"**.
 
 ## A mano
 
@@ -119,12 +128,15 @@ shopify auth login
 
 ## Nota para Windows
 
-Clonando en una ruta corta (`C:\dev\claudeconfig`) no hay ningún problema:
-probado con un clon limpio, los 716 archivos llegan bien.
+Probado el 29 de octubre de 2026 con un clon limpio en Windows: llegan los
+772 archivos, y el instalador de PowerShell deja exactamente lo mismo que el
+de bash (34 skills, 4 agentes, 762 archivos).
 
-Si lo clonas muy profundo, algunas skills tienen rutas internas largas y Git
-se come archivos en silencio por el límite de 260 caracteres de Windows. A mí
-me pasó montando esto: perdía 423 archivos sin avisar. Se arregla con:
+La ruta interna más larga del repo son 92 caracteres, así que el límite de
+260 de Windows solo te daría problemas si lo clonas a más de unos 165
+caracteres de profundidad. Pasa que, cuando toca ese límite, Git se come
+archivos **en silencio**: a mí me pasó montando esto y perdí 423 sin ningún
+aviso. Por si acaso:
 
 ```bash
 git config --global core.longpaths true

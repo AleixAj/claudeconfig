@@ -8,6 +8,14 @@ Si el usuario te pide instalarlo, o simplemente abre una sesión aquí y
 pregunta qué es esto, sigue lo de abajo. No hace falta que leas el `README.md`
 antes: aquí está todo lo necesario.
 
+**Si te han dado solo el enlace del repo y no estás dentro de esta carpeta:**
+clónalo primero en una ruta corta (`git clone
+https://github.com/AleixAj/claudeconfig`), entra y sigue desde aquí. No
+instales nada copiando archivos sueltos desde GitHub.
+
+**Si preguntan qué hace cada skill**, está en `SKILLS.md`: una o dos frases
+por skill, agrupadas por tema, y cuáles necesitan algo instalado aparte.
+
 ## Lo único que tienes que preguntar
 
 Pregunta al usuario **dónde** lo quiere, porque cambia el comando:
