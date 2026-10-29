@@ -4,14 +4,17 @@ Una skill es un manual que Claude Code carga **solo cuando sale el tema**. No
 consume nada mientras no se usa, así que tener muchas no ralentiza nada. No
 hace falta llamarlas: Claude las activa al detectar de qué va la tarea.
 
-Las que llevan ✦ se pueden invocar a mano escribiendo `/nombre`.
+Dos detalles que solo pasan con dos de ellas: `impeccable` es la única que
+trae comandos propios (`/impeccable critique`, `/impeccable polish`...), y
+`review-animations` es la única que **no** se activa sola: hay que pedírsela
+por su nombre.
 
 ## Diseño de interfaces
 
 | Skill | Qué hace |
 |---|---|
-| ✦ `impeccable` | La más grande y la que más se nota. Convierte a Claude en director de diseño: le da criterio para no hacer la típica web genérica. Tiene 24 subcomandos: `/impeccable critique` (review de UX con nota), `audit` (accesibilidad, rendimiento, responsive, con prioridades P0–P3), `bolder` / `quieter` / `typeset` / `layout` / `animate` (empujar un diseño en una dirección), `polish` / `harden` / `optimize` (el último repaso antes de publicar), `live` (tocar elementos en el navegador y escribir el cambio al código). Lleva un detector de diseño genérico con reglas fijas, que no gasta llamadas a la IA. |
-| ✦ `ui-ux-pro-max` | Un catálogo de diseño consultable: 79 estilos, 192 paletas, 74 parejas de tipografías, 119 reglas de UX, 25 tipos de gráfica y 22 stacks (React, Next, Vue, Svelte, Flutter, SwiftUI, Tailwind...). Sirve para que la decisión de estilo no salga de la nada. **Necesita Python 3** para su buscador interno. |
+| `impeccable` | La más grande y la que más se nota. Convierte a Claude en director de diseño: le da criterio para no hacer la típica web genérica. Tiene 24 subcomandos: `/impeccable critique` (review de UX con nota), `audit` (accesibilidad, rendimiento, responsive, con prioridades P0–P3), `bolder` / `quieter` / `typeset` / `layout` / `animate` (empujar un diseño en una dirección), `polish` / `harden` / `optimize` (el último repaso antes de publicar), `live` (tocar elementos en el navegador y escribir el cambio al código). Lleva un detector de diseño genérico con reglas fijas, que no gasta llamadas a la IA. |
+| `ui-ux-pro-max` | Un catálogo de diseño consultable: 79 estilos, 192 paletas, 74 parejas de tipografías, 119 reglas de UX, 25 tipos de gráfica y 22 stacks (React, Next, Vue, Svelte, Flutter, SwiftUI, Tailwind...). Sirve para que la decisión de estilo no salga de la nada. **Necesita Python 3** para su buscador interno. |
 | `design-taste-frontend` | Para landings, portfolios y rediseños. Lee el encargo, deduce la dirección de diseño y evita que salga algo con pinta de plantilla. En rediseños audita primero lo que ya hay. |
 | `emil-design-eng` | El criterio de Emil Kowalski (el autor de Sonner y Vaul) sobre pulido de interfaz, componentes y animación: los detalles invisibles que hacen que algo se sienta bien. |
 | `review-animations` | Revisa animaciones con la vara de medir alta. Por defecto señala problemas; que algo pase la revisión hay que ganárselo. |
@@ -74,8 +77,8 @@ color) · `threejs-loaders` (cargar modelos glTF, compresión Draco y KTX2) ·
 | Skill | Qué hace |
 |---|---|
 | `webapp-testing` | Abre tu web en un navegador de verdad (Playwright) para comprobar que algo funciona, hacer capturas y leer los errores de consola. **Necesita Playwright instalado.** |
-| ✦ `humanizer` | Quita la pinta de texto escrito por IA: el "no es X, es Y", los cierres de una línea, las triadas forzadas, los guiones largos por todas partes, el vocabulario de folleto. Está basada en la guía de Wikipedia sobre señales de escritura con IA. Reescribe sin cambiar lo que dice el texto. |
-| ✦ `skill-creator` | Para crear tus propias skills, mejorarlas y medir si se activan cuando deben. |
+| `humanizer` | Quita la pinta de texto escrito por IA: el "no es X, es Y", los cierres de una línea, las triadas forzadas, los guiones largos por todas partes, el vocabulario de folleto. Está basada en la guía de Wikipedia sobre señales de escritura con IA. Reescribe sin cambiar lo que dice el texto. |
+| `skill-creator` | Para crear tus propias skills, mejorarlas y medir si se activan cuando deben. |
 | `codebase-memory` | Preguntas sobre la estructura del código: quién llama a esta función, qué depende de qué, código muerto. **Necesita el MCP `codebase-memory-mcp` aparte** (ver [CREDITOS.md](CREDITOS.md)). Sin él no hace nada. |
 
 ## Los 4 subagentes
