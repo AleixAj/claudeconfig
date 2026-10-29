@@ -1,7 +1,7 @@
 # Origen de cada skill
 
 Ninguna skill de este repo es mía. Están tal como las tengo instaladas, sin
-modificar. Repos verificados el 28 de octubre de 2026 (comprobé que el repo
+modificar. Repos verificados el 29 de octubre de 2026 (comprobé que el repo
 existe y que la carpeta de la skill está dentro).
 
 | Skill | Repo de origen | Licencia |
@@ -9,8 +9,8 @@ existe y que la carpeta de la skill está dentro).
 | impeccable (+ los 4 agentes) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache 2.0 |
 | ui-ux-pro-max | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | no declarada en la skill |
 | modern-web-guidance | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | no declarada en la skill |
-| emil-design-eng | [emilkowalski/skill](https://github.com/emilkowalski/skill) | no declarada |
-| review-animations | [emilkowalski/skill](https://github.com/emilkowalski/skill) | no declarada |
+| emil-design-eng | [emilkowalski/skills](https://github.com/emilkowalski/skills) | no declarada |
+| review-animations | [emilkowalski/skills](https://github.com/emilkowalski/skills) | no declarada |
 | color-expert | [meodai/skill.color-expert](https://github.com/meodai/skill.color-expert) | ver LICENSE de la skill |
 | humanizer | [blader/humanizer](https://github.com/blader/humanizer) | MIT |
 | web-design-guidelines | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | no declarada |
@@ -34,8 +34,8 @@ No encontré repo público para estas. Si sabes de dónde salen, añádelo aquí
 | design-taste-frontend | Igual que la anterior. |
 | imagegen-frontend-web | Igual. |
 | imagegen-frontend-mobile | Igual. |
-| scroll-craft | No encontré repo. Puede estar relacionada con `oso95/scroll-world`, sin confirmar. |
-| next-bundle-optimizer | No encontré repo. Puede ser la que ahora se llama `vercel-optimize` en `vercel-labs/agent-skills`, sin confirmar. |
+| scroll-craft | No encontré repo. En `oso95/scroll-world` solo está `scroll-world`, así que no viene de ahí. |
+| next-bundle-optimizer | No encontré repo. No es `vercel-optimize` de `vercel-labs/agent-skills`: lo comparé el 29 de octubre de 2026 y es otra skill distinta. |
 | codebase-memory | Va emparejada con el binario `codebase-memory-mcp`. Suelta no sirve de nada. |
 
 ## El MCP de memoria de código
