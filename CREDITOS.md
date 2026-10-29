@@ -1,8 +1,19 @@
 # Origen de cada skill
 
-Ninguna skill de este repo es mía. Están tal como las tengo instaladas, sin
-modificar. Repos verificados el 29 de octubre de 2026 (comprobé que el repo
-existe y que la carpeta de la skill está dentro).
+Ninguna skill de este repo es mía. Están tal como las tengo instaladas.
+Comparadas con sus repos de origen el 29 de octubre de 2026, fichero a
+fichero (ignorando los saltos de línea, que en Windows son distintos).
+
+Ese día actualicé siete: `impeccable` (4.3.1 a 4.8.0, con sus 4 agentes),
+`humanizer` (2.8.0 a 3.1.0), `ui-ux-pro-max`, `skill-creator`,
+`emil-design-eng`, `review-animations` y `vercel-react-view-transitions`.
+
+**Única cosa modificada:** en `ui-ux-pro-max/SKILL.md` la versión nueva llama
+a su buscador con `${CLAUDE_PLUGIN_ROOT}/.claude/skills/...`, que solo existe
+si la instalas como plugin. Aquí se instala como skill normal, así que esa
+variable queda vacía y la ruta no lleva a ninguna parte. Cambié esas 11 rutas
+por `<SKILL_DIR>/scripts/search.py` y añadí una línea explicando que
+`<SKILL_DIR>` es la carpeta donde está el propio SKILL.md. Nada más.
 
 | Skill | Repo de origen | Licencia |
 |---|---|---|

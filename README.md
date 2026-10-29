@@ -8,6 +8,8 @@ Una **skill** es un manual que Claude carga solo cuando el tema aparece
 (diseño, CSS moderno, accesibilidad, Three.js...). Un **subagente** es un
 Claude secundario con un trabajo concreto.
 
+Qué hace cada una, una por una: [SKILLS.md](SKILLS.md).
+
 ## La forma más fácil: que lo haga Claude
 
 ```bash
@@ -69,6 +71,7 @@ sin eso no se cargan.
 | `plantillas/CLAUDE.shopify.md` | Reglas de proyecto para un tema de Shopify |
 | `CLAUDE.md` | Instrucciones para Claude Code. No se instala en ningún sitio |
 | `CREDITOS.md` | De dónde sale cada skill y con qué licencia |
+| `SKILLS.md` | Qué hace cada skill y cuál necesita algo instalado aparte |
 
 Las 11 skills `threejs-*` son de 3D. No estorban (solo se cargan si sale el
 tema), pero se pueden borrar si no las vas a usar.
@@ -88,9 +91,11 @@ Tiene dos límites:
    `imagegen-frontend-mobile`, `scroll-craft`, `next-bundle-optimizer` y
    `codebase-memory`. Las cuatro primeras venían de `Leonxlnx/taste-skill`,
    que las ha fusionado en una sola skill nueva.
-2. **Te llega la versión de hoy, no la de este repo.** Comprobado: de las 27,
-   7 ya son distintas. Si lo que quieres es tener lo mismo que yo, usa
-   `instalar.sh`.
+2. **Te llega la versión de hoy, no la de este repo.** El 29 de octubre de
+   2026 puse al día las 7 que estaban desfasadas, así que ahora mismo las 27
+   coinciden con su origen. La única diferencia a propósito es
+   `ui-ux-pro-max` (ver CREDITOS.md). Con el tiempo volverán a separarse: si
+   quieres exactamente lo mismo que yo, usa `instalar.sh`.
 
 ## Para un proyecto de Shopify
 
